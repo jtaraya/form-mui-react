@@ -45,7 +45,7 @@ const Navbar = () => {
     <AppBar position='sticky'>
       <StyledToolbar>
         <Typography variant='h6' sx={{ display: { xs: 'none', sm: 'block' } }}>
-          TECHPAW
+          TECHPAW <Pets/>
         </Typography>
         <Pets sx={{ display: { xs: 'block', sm: 'none' } }} />
         <Search>
@@ -76,7 +76,7 @@ const Navbar = () => {
         id='demo-positioned-menu'
         aria-labelledby='demo-positioned-button'
         open={open}
-        onClose={e=>setOpen(false)}
+        onClose={(e) => setOpen(false)}
         anchorOrigin={{
           vertical: 'top',
           horizontal: 'right',
